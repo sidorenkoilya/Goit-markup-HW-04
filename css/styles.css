@@ -236,23 +236,30 @@ background-color: var(--accent-color);
 }
 .icon {
     display: inline-block;
-   
+
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
 }
+
+
+
  /* width: 1em; */
  /* height: 1em; */
-
-.benefits .item::before {
+/* before */
+.benefits .item {
   display: block;
-  content: '';
   height: 120px;
   background-color: var(--accent-bg-color);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
+h2.section-title{
+    padding-top: 120px;
+}
+
+
 
 .benefits-title {
     margin-top: 0;
@@ -365,13 +372,17 @@ background-color: var(--accent-color);
 
 .soc.list .icon-link:hover,
 .soc.list .icon-link:focus {
+    
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+
 }
 
 .icon-link .icon {
-    fill: currentColor;
+fill: currentColor!important;
+  
 }
+/* .icon {} */
 
 /* .socnetwork .list {
   display: flex;
@@ -416,9 +427,7 @@ background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.clients.list .icon {
-    fill: currentColor;
-}
+
 
 /* Футер */
 .page-footer {
@@ -514,7 +523,9 @@ background-color: var(--accent-color);
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    color:var(--title-text-color)
 }
+
 
 .page-button {
     font-weight: 500;
@@ -527,7 +538,7 @@ background-color: var(--accent-color);
     border-radius: 4px;
     padding: 6px 22px;
     min-height: 38px;
-    color: var(--accent-color);
+   color:var(--title-text-color)
 }
 button{
     background-color: var(--accent-color);
