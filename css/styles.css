@@ -20,7 +20,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -156,7 +155,6 @@ body {
     background-position: center;
     background-color: var(--decision-bg-color);
     text-align: center;
-    
 }
 
 .decision-text {
@@ -187,14 +185,14 @@ body {
     border-radius: 4px;
     padding: 10px 32px;
     min-height: 50px;
-    color:var(--accent-bg-color)
+    background-color: var(--accent-color);
+    color: var(--accent-bg-color);
 }
 
 .decision-button:hover,
 .decision-button:focus {
-    
-background-color: var(--accent-color);
     color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 
 /* Секциії */
@@ -235,31 +233,28 @@ background-color: var(--accent-color);
     border-radius: 4px;
     background-color: var(--accent-bg-color);
 }
-.icon {
-    display: inline-block;
 
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
-
-
- /* width: 1em; */
- /* height: 1em; */
-/* before */
-.benefits .item {
+/* .benefits .item::before {
   display: block;
+  content: '';
   height: 120px;
   background-color: var(--accent-bg-color);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-
-
+.icon-antenna::before {
+  background-image: url(../images/symbol-defs.svg#icon-antenna-1);
+}
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
+} */
 .benefits-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -278,7 +273,9 @@ background-color: var(--accent-color);
 }
 
 /* Варіанти послуг */
-
+.section.services {
+    padding-top: 47px;
+}
 
 .services.list {
     display: flex;
@@ -326,10 +323,10 @@ background-color: var(--accent-color);
 .team.list .item {
     flex-basis: calc((100% - 90px) / 4);
     max-height: 428px;
-    background-color: var(--primary-white-color);    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-   
 }
 
 .team.list .img {
@@ -348,7 +345,6 @@ background-color: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--icon-link-color);
 }
 
 .soc.list .soc-item:not(:last-child) {
@@ -370,18 +366,13 @@ background-color: var(--accent-color);
 
 .soc.list .icon-link:hover,
 .soc.list .icon-link:focus {
-    
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-
 }
 
 .icon-link .icon {
-fill: currentColor!important;
-  
+    fill: currentColor;
 }
-
-/* .icon {} */
 
 /* .socnetwork .list {
   display: flex;
@@ -426,7 +417,9 @@ fill: currentColor!important;
     border-color: var(--accent-color);
 }
 
-
+.clients.list .icon {
+    fill: currentColor;
+}
 
 /* Футер */
 .page-footer {
@@ -448,9 +441,6 @@ fill: currentColor!important;
 
 .contact.link {
     color: var(--accent-second-color);
-}
-.contlist{
-    margin-bottom: 9px;
 }
 
 .footer-adress .link:hover,
@@ -496,7 +486,7 @@ fill: currentColor!important;
     display: flex;
     height: 44px;
     width: 44px;
-   
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -525,9 +515,7 @@ fill: currentColor!important;
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
-    color:var(--title-text-color);
 }
-
 
 .page-button {
     font-weight: 500;
@@ -540,10 +528,6 @@ fill: currentColor!important;
     border-radius: 4px;
     padding: 6px 22px;
     min-height: 38px;
-   color:var(--title-text-color);
-}
-button{
-    background-color: var(--accent-color);
 }
 
 .button.list .item:not(:last-child) {
@@ -552,7 +536,7 @@ button{
 
 .page-button:hover,
 .page-button:focus {
-color: var(--primary-white-color);
+    color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -581,7 +565,6 @@ color: var(--primary-white-color);
     gap: 30px;
 }
 
-
 .example.list .item {
     flex-basis: calc((100% - 60px) / 3);
 }
@@ -601,7 +584,6 @@ color: var(--primary-white-color);
         1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-
 
 .border {
     padding: 20px 24px;
